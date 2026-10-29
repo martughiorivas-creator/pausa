@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda | PAUSA café</title>
+  <meta name="description" content="Llevate tu propia PAUSA: el cuaderno de journaling y más cosas de PAUSA café.">
+  <meta name="theme-color" content="#f7e493">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__barra">
+      <a class="logo" href="index.html" aria-label="PAUSA café, ir al inicio">PAUSA</a>
+      <input class="nav-check" type="checkbox" id="nav-toggle" aria-label="Abrir o cerrar el menú">
+      <label class="hamburguesa" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="ubicacion.html">Ubicación</a></li>
+          <li><a href="tomate-una-pausa.html">Tomate una pausa</a></li>
+          <li><a href="tienda.html" aria-current="page">Tienda</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--pagina mantel" aria-labelledby="t-tienda">
+      <h1 class="titulo-xl" id="t-tienda">Tienda</h1>
+    </section>
+
+    <section class="bloque bloque--bordo productos" aria-labelledby="t-productos">
+      <div class="contenido">
+        <h2 class="titulo-l" id="t-productos">Llevate tu propia PAUSA</h2>
+        <p class="bajada">Cosas lindas de PAUSA para tener en casa, en la mochila o en la mesa de luz.</p>
+
+        <ul class="productos__grilla">
+          <li class="producto">
+            <div class="producto__foto"><img src="img/cuaderno.tienda.jpg" width="420" height="628" loading="lazy" alt="Cuaderno de journaling de PAUSA, de cuero bordó, con la tapa «tomate una PAUSA y agradecé»."></div>
+            <h3 class="producto__nombre">Cuaderno de journaling</h3>
+            <p class="producto__desc">El mismo que está en las mesas. Para seguir agradeciendo donde quieras.</p>
+            <p class="producto__precio">$18.500</p>
+            <button class="boton boton--crema" type="button">Agregar al carrito</button>
+          </li>
+          <li class="producto">
+            <div class="producto__foto"><img src="img/tote.jpg" width="800" height="800" loading="lazy" alt="Tote bag bordó con el logo de PAUSA."></div>
+            <h3 class="producto__nombre">Tote bag</h3>
+            <p class="producto__desc">Bordó, de algodón, con el logo de PAUSA. Entra el cuaderno y un croissant.</p>
+            <p class="producto__precio">$14.900</p>
+            <button class="boton boton--crema" type="button">Agregar al carrito</button>
+          </li>
+          <li class="producto">
+            <div class="producto__foto"><img src="img/gorra.jpg" width="800" height="800" loading="lazy" alt="Gorra con el logo de PAUSA."></div>
+            <h3 class="producto__nombre">Gorra</h3>
+            <p class="producto__desc">Para las pausas al aire libre, con el logo bordado al frente.</p>
+            <p class="producto__precio">$16.900</p>
+            <button class="boton boton--crema" type="button">Agregar al carrito</button>
+          </li>
+          <li class="producto">
+            <div class="producto__foto"><img src="img/taza.jpg" width="800" height="800" loading="lazy" alt="Taza de cerámica de PAUSA."></div>
+            <h3 class="producto__nombre">Taza de cerámica</h3>
+            <p class="producto__desc">Para que tu café de casa también sea una pausa.</p>
+            <p class="producto__precio">$12.500</p>
+            <button class="boton boton--crema" type="button">Agregar al carrito</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bloque bloque--crema carrito" aria-labelledby="t-carrito">
+      <div class="contenido">
+        <h2 class="titulo-l" id="t-carrito">Tu carrito</h2>
+
+        <ul class="carrito__lista">
+          <li class="carrito__item">
+            <img src="img/cuaderno.tienda.jpg" width="420" height="628" loading="lazy" alt="">
+            <div class="carrito__info">
+              <p class="carrito__nombre">Cuaderno de journaling</p>
+              <p class="carrito__unitario">$18.500</p>
+            </div>
+            <div class="cantidad" role="group" aria-label="Cantidad">
+              <button type="button" aria-label="Quitar uno">−</button>
+              <span>1</span>
+              <button type="button" aria-label="Sumar uno">+</button>
+            </div>
+            <p class="carrito__precio">$18.500</p>
+          </li>
+          <li class="carrito__item">
+            <img src="img/tote.jpg" width="800" height="800" loading="lazy" alt="">
+            <div class="carrito__info">
+              <p class="carrito__nombre">Tote bag</p>
+              <p class="carrito__unitario">$14.900</p>
+            </div>
+            <div class="cantidad" role="group" aria-label="Cantidad">
+              <button type="button" aria-label="Quitar uno">−</button>
+              <span>1</span>
+              <button type="button" aria-label="Sumar uno">+</button>
+            </div>
+            <p class="carrito__precio">$14.900</p>
+          </li>
+        </ul>
+
+        <div class="carrito__total">
+          <p>Total</p>
+          <p class="carrito__monto">$33.400</p>
+        </div>
+        <button class="boton boton--bordo" type="button">Finalizar compra</button>
+        <p class="carrito__nota">Retiro en el local: El Salvador 5839, Palermo. Lunes a Sábado de 8 a 20.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">© 2026 - Martina Ghio Rivas. All rights reserved</p>
+    <nav class="footer__nav" aria-label="Navegación del pie">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="tomate-una-pausa.html">Tomate una pausa</a></li>
+        <li><a href="tienda.html" aria-current="page">Tienda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
